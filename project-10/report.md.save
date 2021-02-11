@@ -1,0 +1,161 @@
+[Home of Lab Report](../lab.html)
+
+# Program Ex 01:
+
+## Source file/s
+
+```
+src/.
+└── main.c
+
+0 directories, 1 file
+```
+
+---
+
+
+# src/main.c
+
+```
+
+#include <stdio.h>
+int main(){
+struct Book
+{
+char Title [100];
+char Author[100];
+float Price;
+char Subject[100];
+};
+struct Book Book1 = {
+"Manufacturing_Practice",
+"Swarn_Singh",
+95.50,
+"Manufacturing Practices"
+};
+printf("Book Number:-1\n");
+printf("Title:-%s\n",Book1.Title);
+printf("Author:-%s\n",Book1.Author);
+printf("Price:-%2f\n",Book1.Price);
+printf("Subject:-%s\n\n\n",Book1.Subject);
+
+struct Book Book2 = {
+"Engineering Chemistry",
+"Dr.Amanpreet Kaur Sodhi",
+240,
+"Chemistry"
+};
+printf("Book Number:-2\n");
+printf("Title:-%s\n",Book2.Title);
+printf("Author:-%s\n",Book2.Author);
+printf("Price:-%2f\n",Book2.Price);
+printf("Subject:-%s\n\n\n",Book2.Subject);
+
+struct Book Book3 = {
+"Effective Technical Communication",
+"Mashrif Rizvi",
+300,
+"English"
+};
+printf("Book Number:-3\n");
+printf("Title:-%s\n",Book3.Title);
+printf("Author:-%s\n",Book3.Author);
+printf("Price:-%2f\n",Book3.Price);
+printf("Subject:-%s\n\n\n",Book3.Subject);
+struct Book Book4 = {
+"Engineering Maths",
+"Prithviraj Chauhan",
+350,
+"mathematics",
+};
+printf("Book Number:-4\n");
+printf("Title:-%s\n",Book4.Title);
+printf("Author:-%s\n",Book4.Author);
+printf("Price:-%2f\n",Book4.Price);
+printf("Subject:-%s\n\n\n",Book4.Subject);
+
+struct Book Book5 = {
+"C Notes For Professionals",
+"hsrai",
+225.75,
+"Programming For Problem Solving",
+};
+printf("Book Number:-5\n");
+printf("Title:-%s\n",Book5.Title);
+printf("Author:-%s\n",Book5.Author);
+printf("Price:-%2f\n",Book5.Price);
+printf("Subject:-%s\n\n\n",Book5.Subject);
+return 0;
+}
+
+
+
+```
+
+---
+
+## Compilation
+
+```
+xmake
+
+[ 50%]: ccache compiling.release src/main.c
+[ 75%]: linking.release project-9
+[100%]: build ok!
+
+```
+
+## Execution
+```
+xmake run
+
+Book Number:-1
+Title:-Manufacturing_Practice
+Author:-Swarn_Singh
+Price:-95.500000
+Subject:-Manufacturing Practices
+
+
+Book Number:-2
+Title:-Engineering Chemistry
+Author:-Dr.Amanpreet Kaur Sodhi
+Price:-240.000000
+Subject:-Chemistry
+
+
+Book Number:-3
+Title:-Effective Technical Communication
+Author:-Mashrif Rizvi
+Price:-300.000000
+Subject:-English
+
+
+Book Number:-4
+Title:-Engineering Maths
+Author:-Prithviraj Chauhan
+Price:-350.000000
+Subject:-mathematics
+
+
+Book Number:-5
+Title:-C Notes For Professionals
+Author:-hsrai
+Price:-225.750000
+Subject:-Programming For Problem Solving
+
+
+
+```
+
+### Known Bugs and/or Errors:
+
+List all the known limitations / bugs and / or errors of your program.
+
+After extensively testing your program, you should be aware of (nearly) every issue it has. How does your program handle bad input? How does your program handle edge cases? This section is a space for full-disclosure; what's wrong with your program?
+
+### Lessons Learned:
+
+1. What went well
+1. What you would do differently next time
+1. How the exercise might be revised to make it clearer/more satisfying
+1. What the faculty members might have done differently to promote learning
